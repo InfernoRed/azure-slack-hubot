@@ -9,7 +9,7 @@
 #
 # Commands:
 #   chef - Encheferizes the given message.
-#
+# 
 # Author:
 #   apps@digitaldictator.net
 
@@ -29,7 +29,7 @@ encheferize = (word) ->
     index = 0
     iSeen = false
     
-    if word.match /^@/
+    if word.match /^@|https?:\/\//
         result += word
     else while index < word.length
         transliterateResult = transliterate(word, index, iSeen)
